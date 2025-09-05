@@ -608,7 +608,14 @@ const StyledWrapper = styled.div`
 
 
   /* Blue divider under rating spanning full card width */
-  .card .divider { height: 2px; width: 100%; background: #2563EB; opacity: 0.9; margin: 0.5rem 0 0.2rem; }
+  .card .divider { 
+    height: 2.5px; /* زيادة السماكة قليلاً */
+    width: 100%; 
+    background: linear-gradient(90deg, #2563EB 0%, #3b82f6 100%); /* تدرج لوني */
+    opacity: 0.9; 
+    margin: 0.6rem 0 0.4rem; /* زيادة المسافات */
+    border-radius: 2px; /* إضافة انحناء خفيف */
+  }
 
 
 
