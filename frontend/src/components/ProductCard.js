@@ -209,12 +209,13 @@ const StyledWrapper = styled.div`
   .card {
     --accent-color: #ffd426;
     position: relative;
-    width: 240px;
+    width: 260px; /* زيادة العرض من 240px إلى 260px */
     background: white;
-    border-radius: 1rem;
-    padding: 0.3rem;
-    padding-bottom: 2rem;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 50px 30px -20px;
+    border-radius: 1.2rem; /* زيادة الانحناء قليلاً */
+    padding: 0.4rem; /* زيادة الحشو قليلاً */
+    padding-bottom: 2.2rem; /* زيادة المسافة من الأسفل */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 50px 30px -20px, 
+                rgba(0, 0, 0, 0.1) 0px 20px 25px -15px; /* ظل مزدوج للعمق */
     transition: all 0.5s ease-in-out;
     direction: rtl;
     overflow: visible; /* allow elements (e.g., close button) to sit outside card bounds */
