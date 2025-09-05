@@ -272,7 +272,15 @@ const StyledWrapper = styled.div`
   .mini-overlay .payment-card .card-icon.real-icon svg,
   .mini-overlay .payment-card .card-icon.real-icon img { width: 26px; height: 26px; transform: scale(1.0); transform-origin: center; }
 
-  .card .image-container { position: relative; width: 100%; height: 130px; border-radius: 0.7rem; border-top-left-radius: 4rem; margin-bottom: 1rem; /* لا نخفي أي جزء من الزر */ overflow: visible; }
+  .card .image-container { 
+    position: relative; 
+    width: 100%; 
+    height: 140px; /* زيادة الارتفاع من 130px */
+    border-radius: 0.8rem; 
+    border-top-left-radius: 4.5rem; /* زيادة الانحناء */
+    margin-bottom: 1.3rem; /* زيادة المسافة السفلية */
+    overflow: visible; 
+  }
   .card .image-container .icon-image { filter: drop-shadow(0 0 0 rgba(0,0,0,0)); mix-blend-mode: normal; opacity: 0.95; }
   .card .image-container .icon-engrave { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 120px; height: 120px; pointer-events: none; }
   .card .image-container .icon-engrave .icon { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
