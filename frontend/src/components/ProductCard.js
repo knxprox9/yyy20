@@ -322,10 +322,39 @@ const StyledWrapper = styled.div`
 
   .card .content .color-size-container .colors .colors-container { list-style-type: none; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.3rem; font-size: 0.5rem; margin-top: 0.2rem; }
 
-  /* Promo row under blue divider */
-  .card .promo-row { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-top: 0.5rem; color: #6b7280; font-weight: 700; font-size: 0.6rem; }
-  .card .promo-row .promo-item { display: inline-flex; align-items: center; gap: 0.25rem; background: #ffffff; border: 1px solid #eef2ff; border-radius: 999px; padding: 2px 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
-  .card .promo-row .promo-item svg { width: 12px; height: 12px; color: #2563EB; }
+  /* تحسين نصوص الميزات العربية */
+  .card .promo-row { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 0.5rem; 
+    margin-top: 0.5rem; 
+    color: #4a5568; 
+    font-family: 'Tajawal', 'IBM Plex Sans Arabic', 'Cairo', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 600; /* وزن أقوى للميزات */
+    font-size: 0.7rem; /* حجم أكبر قليلاً */
+  }
+  .card .promo-row .promo-item { 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 0.35rem; /* مسافة أكبر بين الأيقونة والنص */
+    background: #ffffff; 
+    border: 1px solid #e2e8f0; /* حدود أوضح */
+    border-radius: 999px; 
+    padding: 4px 8px; /* حشو أكبر */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08); /* ظل أوضح */
+  }
+  .card .promo-row .promo-item svg { 
+    width: 14px; 
+    height: 14px; 
+    color: #3182ce; /* لون أزرق أوضح */
+  }
+  .card .promo-row .promo-item span {
+    font-family: 'Tajawal', 'IBM Plex Sans Arabic', 'Cairo', sans-serif;
+    font-weight: 600;
+    color: #2d3748; /* نص أغمق للوضوح */
+    line-height: 1.4;
+  }
 
   /* Remove all old conflicting CSS rules */
 
