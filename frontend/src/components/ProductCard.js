@@ -303,7 +303,14 @@ const StyledWrapper = styled.div`
 
   .card .image-container .svg { height: 100%; width: 100%; border-radius: inherit; }
 
-  .card .image-container .toggle-wrapper { position: absolute; left: 20px; bottom: -20px; z-index: 4; transform: scale(0.55); transform-origin: left bottom; }
+  .card .image-container .toggle-wrapper { 
+    position: absolute; 
+    left: 22px; /* تحسين الموضع */
+    bottom: -22px; /* تحسين الموضع */
+    z-index: 4; 
+    transform: scale(0.65); /* زيادة الحجم قليلاً */
+    transform-origin: left bottom; 
+  }
 
   .card .favorite { 
     position: absolute; 
