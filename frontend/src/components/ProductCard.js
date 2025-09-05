@@ -352,8 +352,21 @@ const StyledWrapper = styled.div`
     word-spacing: 0.08em; 
   }
 
-  .card .content .loading-indicator { display: flex; justify-content: center; align-items: center; gap: 0.2rem; margin-bottom: 1rem; padding: 0.3rem 0; }
-  .card .content .loading-indicator .dot { width: 4px; height: 4px; border-radius: 50%; background-color: #F79E1B; animation: typing-dots 1.4s infinite ease-in-out; }
+  .card .content .loading-indicator { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 0.3rem; /* زيادة المسافة بين النقاط */
+    margin-bottom: 1.2rem; /* زيادة المسافة */
+    padding: 0.4rem 0; /* زيادة الحشو */
+  }
+  .card .content .loading-indicator .dot { 
+    width: 5px; /* زيادة حجم النقاط */
+    height: 5px; 
+    border-radius: 50%; 
+    background-color: #F79E1B; 
+    animation: typing-dots 1.4s infinite ease-in-out; 
+  }
   .card .content .loading-indicator .dot:nth-child(1) { animation-delay: -0.32s; }
   .card .content .loading-indicator .dot:nth-child(2) { animation-delay: -0.16s; }
   .card .content .loading-indicator .dot:nth-child(3) { animation-delay: 0; }
