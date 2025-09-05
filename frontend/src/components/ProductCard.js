@@ -305,7 +305,15 @@ const StyledWrapper = styled.div`
 
   .card .image-container .toggle-wrapper { position: absolute; left: 20px; bottom: -20px; z-index: 4; transform: scale(0.55); transform-origin: left bottom; }
 
-  .card .favorite { position: absolute; width: 14px; height: 14px; top: 8px; left: 8px; cursor: pointer; }
+  .card .favorite { 
+    position: absolute; 
+    width: 18px; /* زيادة الحجم */
+    height: 18px; 
+    top: 10px; 
+    left: 10px; 
+    cursor: pointer; 
+    z-index: 5; /* التأكد من الظهور فوق العناصر الأخرى */
+  }
   .card .favorite input { position: absolute; opacity: 0; width: 0; height: 0; }
   .card .favorite input:checked ~ svg { animation: circle-bounce 0.3s; fill: #22c55e; filter: drop-shadow(0px 2px 3px rgba(34, 197, 94, 0.4)); }
   .card .favorite svg { fill: #d1d5db; transition: all 0.2s ease; }
