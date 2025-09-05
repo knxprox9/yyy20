@@ -281,8 +281,8 @@ const StyledWrapper = styled.div`
   .card .favorite svg { fill: #d1d5db; transition: all 0.2s ease; }
 
   .card .content { 
-    padding: 0 16px; /* 8px grid system - 16px = 2 grid units */
-    margin-bottom: 16px; /* 8px grid system */
+    padding: 0 18px; /* حشو أكبر للمحتوى العربي */
+    margin-bottom: 18px; /* مسافة أكبر من الأسفل */
   }
 
   .card .content .brand { 
