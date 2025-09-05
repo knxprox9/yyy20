@@ -230,7 +230,13 @@ const StyledWrapper = styled.div`
 
   .mini-overlay .close-btn { position: absolute; top: -20px; left: 50%; transform: translateX(-50%); background: #111827; color: #fff; border: none; border-radius: 999px; width: 26px; height: 26px; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; opacity: 0.95; z-index: 30; box-shadow: 0 6px 12px rgba(0,0,0,0.25); }
 
-  .mini-content { padding: 0.75rem 0.75rem 1rem 0.75rem; padding-top: 2.2rem; color: #374151; height: 100%; }
+  .mini-content { 
+    padding: 0.75rem 0.75rem 1rem 0.75rem; 
+    padding-top: 2.2rem; 
+    color: #2d3748; /* لون أغمق للوضوح */
+    height: 100%; 
+    font-family: 'Tajawal', 'IBM Plex Sans Arabic', 'Cairo', sans-serif;
+  }
 
   .mini-payments { display:flex; justify-content:center; }
   .mini-overlay .colors-container { margin-top: 0; }
