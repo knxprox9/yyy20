@@ -286,15 +286,15 @@ const StyledWrapper = styled.div`
   }
 
   .card .content .brand { 
-    font-family: 'IBM Plex Sans Arabic', 'Noto Sans Arabic', 'Amiri', 'Cairo', -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight: 800; 
-    font-size: 0.875rem; /* 14px - better readability */
-    color: #4a5568; /* Improved contrast from #a6a6a6 */
+    font-family: 'Tajawal', 'IBM Plex Sans Arabic', 'Noto Sans Arabic', 'Cairo', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 700; /* تحسين الوزن لخط تجوال */
+    font-size: 1rem; /* 16px - حجم أكبر وأوضح */
+    color: #2d3748; /* تحسين التباين بلون أغمق */
     text-align: right; 
-    margin-bottom: 12px; /* 8px grid system - 12px = 1.5 grid units */
-    line-height: 1.4;
-    letter-spacing: 0.025em;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Subtle depth */
+    margin-bottom: 10px; /* تقليل المسافة قليلاً */
+    line-height: 1.6; /* تحسين المسافة بين السطور للعربية */
+    letter-spacing: 0.01em; /* مسافة أنسب للخط العربي */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); /* ظل خفيف لوضوح أفضل */
   }
 
   .card .content .product-name { 
