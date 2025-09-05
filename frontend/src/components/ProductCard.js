@@ -325,17 +325,17 @@ const StyledWrapper = styled.div`
 
   .card .content .brand { 
     font-family: 'Tajawal', 'IBM Plex Sans Arabic', 'Noto Sans Arabic', 'Cairo', -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight: 700; /* تحسين الوزن لخط تجوال */
-    font-size: 0.85rem; /* 13.6px - حجم أصغر قليلاً ليصبح سطر واحد */
-    color: #2d3748; /* تحسين التباين بلون أغمق */
+    font-weight: 700; 
+    font-size: 0.9rem; /* زيادة الحجم قليلاً مع البطاقة الأكبر */
+    color: #2d3748; 
     text-align: right; 
-    margin-bottom: 10px; /* تقليل المسافة قليلاً */
-    line-height: 1.2; /* سطر واحد */
-    letter-spacing: 0.01em; /* مسافة أنسب للخط العربي */
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); /* ظل خفيف لوضوح أفضل */
-    white-space: nowrap; /* منع التفاف النص */
-    overflow: hidden; /* إخفاء النص الزائد */
-    text-overflow: ellipsis; /* إضافة نقاط في النهاية إذا كان النص طويل */
+    margin-bottom: 12px; /* زيادة المسافة */
+    line-height: 1.2; 
+    letter-spacing: 0.01em; 
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
   }
 
   .card .content .product-name { 
