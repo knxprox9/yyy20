@@ -319,8 +319,8 @@ const StyledWrapper = styled.div`
   .card .favorite svg { fill: #d1d5db; transition: all 0.2s ease; }
 
   .card .content { 
-    padding: 0 18px; /* حشو أكبر للمحتوى العربي */
-    margin-bottom: 18px; /* مسافة أكبر من الأسفل */
+    padding: 0 20px; /* زيادة الحشو الجانبي */
+    margin-bottom: 20px; /* زيادة المسافة من الأسفل */
   }
 
   .card .content .brand { 
