@@ -613,18 +613,19 @@ const StyledWrapper = styled.div`
 
 
   .card .content .rating { 
-    color: #4a5568; /* لون أغمق للوضوح */
-    font-size: 0.7rem; /* حجم أكبر قليلاً */
+    color: #4a5568; 
+    font-size: 0.75rem; /* زيادة الحجم */
     font-family: 'Tajawal', 'IBM Plex Sans Arabic', 'Cairo', sans-serif;
-    font-weight: 600; /* وزن أقوى للأرقام */
+    font-weight: 600; 
     display: flex; 
     align-items: center; 
-    gap: 0.6rem; /* مسافة أكبر بين النجوم والرقم */
-    direction: ltr; /* الأرقام والنجوم من اليسار لليمين */
-    justify-content: flex-end; /* محاذاة لليمين لتتماشى مع العربية */
+    gap: 0.8rem; /* زيادة المسافة بين النجوم والرقم */
+    direction: ltr; 
+    justify-content: flex-end; 
+    margin-bottom: 0.8rem; /* إضافة مسافة من الأسفل */
   }
   .card .content .rating svg { 
-    height: 14px; /* ارتفاع أكبر للنجوم */
+    height: 16px; /* زيادة ارتفاع النجوم */
   }
 
   .card:hover { transform: scale(1.03); }
