@@ -421,9 +421,9 @@ const StyledWrapper = styled.div`
   
   /* Base Premium Card Style */
   .premium-card {
-    width: 38px !important;
-    height: 24px !important;
-    border-radius: 6px !important;
+    width: 42px !important; /* زيادة العرض */
+    height: 28px !important; /* زيادة الارتفاع */
+    border-radius: 7px !important; /* زيادة الانحناء */
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -431,11 +431,11 @@ const StyledWrapper = styled.div`
     cursor: pointer !important;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
     font-weight: 700 !important;
-    font-size: 8px !important;
+    font-size: 9px !important; /* زيادة حجم النص */
     letter-spacing: 0.5px !important;
     box-shadow: 
-      0 2px 8px rgba(0, 0, 0, 0.15),
-      0 1px 3px rgba(0, 0, 0, 0.1),
+      0 3px 12px rgba(0, 0, 0, 0.18), /* ظل أقوى */
+      0 2px 4px rgba(0, 0, 0, 0.12),
       inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
     overflow: hidden !important;
