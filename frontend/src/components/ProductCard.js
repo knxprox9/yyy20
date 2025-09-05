@@ -553,8 +553,20 @@ const StyledWrapper = styled.div`
 
 
 
-  .card .content .rating { color: #a8a8a8; font-size: 0.6rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; }
-  .card .content .rating svg { height: 12px; }
+  .card .content .rating { 
+    color: #4a5568; /* لون أغمق للوضوح */
+    font-size: 0.7rem; /* حجم أكبر قليلاً */
+    font-family: 'Tajawal', 'IBM Plex Sans Arabic', 'Cairo', sans-serif;
+    font-weight: 600; /* وزن أقوى للأرقام */
+    display: flex; 
+    align-items: center; 
+    gap: 0.6rem; /* مسافة أكبر بين النجوم والرقم */
+    direction: ltr; /* الأرقام والنجوم من اليسار لليمين */
+    justify-content: flex-end; /* محاذاة لليمين لتتماشى مع العربية */
+  }
+  .card .content .rating svg { 
+    height: 14px; /* ارتفاع أكبر للنجوم */
+  }
 
   .card:hover { transform: scale(1.03); }
 
