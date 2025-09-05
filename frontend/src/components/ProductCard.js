@@ -317,14 +317,17 @@ const StyledWrapper = styled.div`
     font-family: 'Tajawal', 'IBM Plex Sans Arabic', 'Noto Sans Arabic', 'Cairo', -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 500; /* وزن متوسط مناسب للنص الطويل */
     color: #1a202c; /* لون أغمق لتباين أفضل */
-    font-size: 0.875rem; /* 14px - حجم مناسب للوصف */
+    font-size: 0.75rem; /* 12px - حجم أصغر ليصبح سطر واحد */
     margin-bottom: 12px; /* مسافة محسنة */
     text-align: right; 
-    line-height: 1.7; /* مسافة أكبر بين السطور للنص العربي */
+    line-height: 1.3; /* مسافة مناسبة لسطر واحد */
     letter-spacing: 0.005em; /* مسافة خفيفة جداً للنص العربي */
     text-shadow: 0 0.5px 2px rgba(0, 0, 0, 0.06); /* ظل خفيف */
     max-width: 100%;
-    word-spacing: 0.1em; /* مسافة محسنة بين الكلمات العربية */
+    word-spacing: 0.05em; /* مسافة أصغر بين الكلمات العربية */
+    white-space: nowrap; /* منع التفاف النص */
+    overflow: hidden; /* إخفاء النص الزائد */
+    text-overflow: ellipsis; /* إضافة نقاط في النهاية إذا كان النص طويل */
   }
 
   .card .content .loading-indicator { display: flex; justify-content: center; align-items: center; gap: 0.2rem; margin-bottom: 1rem; padding: 0.3rem 0; }
