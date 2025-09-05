@@ -289,7 +289,15 @@ const StyledWrapper = styled.div`
   .card .image-container .icon-engrave .icon.dark { color: rgba(0,0,0,0.15); mix-blend-mode: multiply; filter: blur(0.2px); transform: translate(calc(-50% + 1px), calc(-50% + 1px)); }
 
 
-  .card .image-container .status-dot { position: absolute; top: 6px; left: 8px; width: 8px; height: 8px; border-radius: 50%; box-shadow: 0 0 0 2px #ffffff; }
+  .card .image-container .status-dot { 
+    position: absolute; 
+    top: 8px; 
+    left: 10px; 
+    width: 10px; /* زيادة الحجم */
+    height: 10px; 
+    border-radius: 50%; 
+    box-shadow: 0 0 0 3px #ffffff, 0 2px 4px rgba(0,0,0,0.15); /* ظل أوضح */
+  }
   .card .image-container .status-dot.online { background: #22c55e; }
   .card .image-container .status-dot.offline { background: #9ca3af; }
 
