@@ -246,7 +246,14 @@ const StyledWrapper = styled.div`
 
   .mini-overlay .payment-card { position: relative; cursor: pointer; transition: transform 0.2s ease; width: 56px; display: flex; flex-direction: column; align-items: center; gap: 0.15rem; }
   .mini-overlay .payment-card:hover { transform: scale(1.05); }
-  .mini-overlay .payment-card .label-text { font-size: 0.48rem; color: #6b7280; font-weight: 700; line-height: 1; text-align: center; }
+  .mini-overlay .payment-card .label-text { 
+    font-size: 0.55rem; /* حجم أكبر قليلاً للوضوح */
+    color: #4a5568; /* لون أغمق للتباين */
+    font-family: 'Tajawal', 'IBM Plex Sans Arabic', 'Cairo', sans-serif;
+    font-weight: 600; /* وزن أقوى */
+    line-height: 1.3; 
+    text-align: center; 
+  }
   .mini-overlay .payment-card .card-icon.real-icon { 
     width: 50px !important; 
     height: 32px !important; 
