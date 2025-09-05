@@ -346,33 +346,38 @@ const StyledWrapper = styled.div`
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
-    gap: 0.5rem; 
+    gap: 0.4rem; /* مسافة أصغر بين العناصر */
     margin-top: 0.5rem; 
     color: #4a5568; 
     font-family: 'Tajawal', 'IBM Plex Sans Arabic', 'Cairo', -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 600; /* وزن أقوى للميزات */
-    font-size: 0.7rem; /* حجم أكبر قليلاً */
+    font-size: 0.55rem; /* حجم أصغر ليصبح سطر واحد */
   }
   .card .promo-row .promo-item { 
     display: inline-flex; 
     align-items: center; 
-    gap: 0.35rem; /* مسافة أكبر بين الأيقونة والنص */
+    gap: 0.25rem; /* مسافة أصغر بين الأيقونة والنص */
     background: #ffffff; 
     border: 1px solid #e2e8f0; /* حدود أوضح */
     border-radius: 999px; 
-    padding: 4px 8px; /* حشو أكبر */
+    padding: 3px 6px; /* حشو أصغر */
     box-shadow: 0 2px 4px rgba(0,0,0,0.08); /* ظل أوضح */
+    flex: 1; /* توزيع متساوي */
+    justify-content: center; /* توسيط المحتوى */
   }
   .card .promo-row .promo-item svg { 
-    width: 14px; 
-    height: 14px; 
+    width: 11px; 
+    height: 11px; 
     color: #3182ce; /* لون أزرق أوضح */
+    flex-shrink: 0; /* منع تقليص الأيقونة */
   }
   .card .promo-row .promo-item span {
     font-family: 'Tajawal', 'IBM Plex Sans Arabic', 'Cairo', sans-serif;
     font-weight: 600;
+    font-size: 0.55rem; /* حجم صغير للنص */
     color: #2d3748; /* نص أغمق للوضوح */
-    line-height: 1.4;
+    line-height: 1.2;
+    white-space: nowrap; /* منع التفاف النص */
   }
 
   /* Remove all old conflicting CSS rules */
